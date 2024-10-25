@@ -84,7 +84,7 @@ function Main() {
         <h1 className="font-bold text-4xl pb-4">About us</h1>
         <p className="text-md font-light">We are a team of passionate designers, developers, and creative thinkers who 
         believe in the power of innovation. Our mission is to provide businesses with top-tier creative solutions 
-        that not only look good but perform even better. Whether you're launching a new product, rebranding, or 
+        that not only look good but perform even better. Whether you are launching a new product, rebranding, or 
         expanding your digital presence, we have the tools to help you succeed.</p>
         </div>
 
