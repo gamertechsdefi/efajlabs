@@ -2,100 +2,150 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className="min-h-screen">
+      <Header />
+      <Main />
     </div>
+  );
+}
+
+function Header() {
+  return (
+    <div className="px-8 md:px-16 py-8 flex flex-row justify-between">
+      <div>
+        <h1 className="font-bold text-2xl">Logo</h1>
+
+      </div>
+      <div className="flex gap-8">
+        <p>About </p>
+        <p>Services </p>
+      </div>
+    </div>
+  );
+}
+
+function Main() {
+  return (
+    <main className="flex flex-col justify-center text-center">
+      <div className="">
+
+        <div className=" h-screen px-16 md:px-32 pt-32"
+        style={{
+          backgroundImage:'radial-gradient(125% 125% at 50% 0%, #08080A 50%, #ADF802)',
+        }}>
+          <h1 className="bg-gradient-to-b from-[#ADF802] to-[#60840d] bg-clip-text text-transparent text-5xl md:text-7xl font-black  flex flex-col">
+            <span className="" style={{
+              fontFamily:'BricolageGrotesque, sans-serif',
+            }}>Turning Ideas into Impact</span>
+          </h1>
+          <p className="text-sm pt-8 md:px-16">We blend creativity with cutting-edge technology to craft visually stunning and results-driven solutions. From web design to video editing, we help businesses transform into digital powerhouses</p>
+          <button className="border-2 border-[#ADF802] px-8 py-2 mt-4 rounded-3xl">Let's create</button>
+        </div>
+
+        <div className="mt-16 px-8">
+          <h1 className="text-4xl pb-4">Our goal is to see our client in 
+          <span className="font-bold text-[#ADF802]"> top 100</span></h1>
+          <p className="font-bold">WE HAVE THE SKILL SETS TO MAKE YOU ACHIEVE 10X RESULTS</p>
+
+          <div className="py-8 mx-8 md:mx-32 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div className="aspect-square bg-neutral-900 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">1000+</span>
+                <span className="">CUSTOMERS</span>
+              </h1>
+
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
+
+            <div className="aspect-square bg-neutral-900 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">1000+</span>
+                <span className="">CUSTOMERS</span>
+              </h1>
+
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
+
+            <div className="aspect-square bg-neutral-900 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">1000+</span>
+                <span className="">CUSTOMERS</span>
+              </h1>
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="bg-[#ADF802] text-black text-left mt-16 px-8 md:px-32 py-16 grid md:grid-cols-2 gap-16">
+        <div className="flex flex-col justify-between gap-8">
+          <div>
+        <h1 className="font-bold text-4xl pb-4">About us</h1>
+        <p className="text-md font-light">We are a team of passionate designers, developers, and creative thinkers who 
+        believe in the power of innovation. Our mission is to provide businesses with top-tier creative solutions 
+        that not only look good but perform even better. Whether you're launching a new product, rebranding, or 
+        expanding your digital presence, we have the tools to help you succeed.</p>
+        </div>
+
+        <div className="flex flex-row gap-4">
+          <div className="bg-[#08090A] w-16 h-16 rounded-lg"></div>
+          <div className="bg-[#08090A] w-16 h-16 rounded-lg"></div>
+          <div className="bg-[#08090A] w-16 h-16 rounded-lg"></div>
+          <div className="bg-[#08090A] w-16 h-16 rounded-lg"></div>
+        </div>
+        </div>
+
+        <div className="">
+          <h1 className="font-bold text-4xl pb-8">Why choose us</h1>
+          <div className="flex flex-col gap-4">
+          <div className="bg-[#08090A] text-white p-4">
+            <p className="font-semibold pb-2">Innovative Approach</p>
+            <p className="text-sm font-light">We merge design, technology, and strategy to deliver out of the box solutions.</p>
+          </div>
+          <div className="bg-[#08090A] text-white p-4">
+            <p className="font-semibold pb-2">Collaborative Spirit</p>
+            <p className="text-sm font-light">Our team works closely with you to understand your vision and goals.</p>
+          </div>
+                   <div className="bg-[#08090A] text-white p-4">
+            <p className="font-semibold pb-2">Results Driven</p>
+            <p className="text-sm font-light">Every project is tailored to generate maximum impact.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+      <h1 className="font-bold text-3xl pt-32">Our Services</h1>
+      <div className="text-black pt-8 mx-16 md:mx-64 text-left grid grid-cols-1 grid-rows-2 md:grid-cols-3 gap-4">
+        <div className="aspect-square bg-[#ADF802] p-4 rounded-xl">
+          <h1>Our Services</h1>
+        </div>
+        <div className="aspect-square bg-[#ADF802] p-4 rounded-xl">
+          <h1>Our Services</h1>
+        </div>
+        <div className="aspect-square bg-[#ADF802] p-4 rounded-xl">
+          <h1>Our Services</h1>
+        </div>
+        <div className="aspect-square bg-[#ADF802] p-4 rounded-xl">
+          <h1>Our Services</h1>
+        </div>
+        <div className="aspect-square bg-[#ADF802] p-4 rounded-xl">
+          <h1>Our Services</h1>
+        </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+function Footer() {
+
+  return (
+    <footer>
+      <div>
+
+      </div>
+    </footer>
   );
 }
