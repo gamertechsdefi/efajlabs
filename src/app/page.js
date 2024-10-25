@@ -39,7 +39,7 @@ function Main() {
             }}>Turning Ideas into Impact</span>
           </h1>
           <p className="text-sm pt-8 md:px-16">We blend creativity with cutting-edge technology to craft visually stunning and results-driven solutions. From web design to video editing, we help businesses transform into digital powerhouses</p>
-          <button className="border-2 border-[#ADF802] px-8 py-2 mt-4 rounded-3xl">Let's create</button>
+          <button className="border-2 border-[#ADF802] px-8 py-2 mt-4 rounded-3xl">Let create</button>
         </div>
 
         <div className="mt-16 px-8">
