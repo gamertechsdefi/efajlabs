@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import { FaTwitter, FaInstagram, FaMailBulk } from 'react-icons/fa';
-
 export default function Home() {
   return (
     <div className="min-h-screen">
