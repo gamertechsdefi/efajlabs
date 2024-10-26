@@ -21,17 +21,15 @@ body {
 }
 
 @font-face {
-  font-family: 'Bricolage';
-  src: url('/src/app/fonts//BricolageGrotesque-Regular.ttf') format('ttf'),
-       url('/src/app/fonts//BricolageGrotesque-Regular.ttf') format('ttf');
-  font-weight: 400;
+  font-family: 'Bricolage Grotesque';
+  src: url('/fonts/BricolageGrotesque-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'BricolageBold';
-  src: url('/src/app/fonts//BricolageGrotesque-ExtraBold.ttf') format('ttf'),
-       url('/src/app/fonts//BricolageGrotesque-ExtraBpold.ttf') format('ttf');
+  font-family: 'Bricolage Grotesque';
+  src: url('/fonts/BricolageGrotesque-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
