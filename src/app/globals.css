@@ -34,5 +34,20 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
+
 
 
