@@ -28,8 +28,6 @@ function Header() {
 function Main() {
   return (
     <main className="flex flex-col justify-center text-center">
-      <div className="">
-
         <div className=" min-h-screen px-16 md:px-32 pt-32 md:pt-16"
           style={{
             backgroundImage: 'radial-gradient(125% 125% at 50% 0%, #08080A 50%, #ADF802)',
@@ -90,9 +88,6 @@ function Main() {
             </div>
           </div>
         </div>
-
-      </div>
-
       <div className="bg-[#ADF802] text-black text-left mt-16 px-8 md:px-32 py-16 grid md:grid-cols-2 gap-16">
         <div className="flex flex-col justify-between gap-8">
           <div>
