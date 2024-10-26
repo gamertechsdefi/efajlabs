@@ -176,9 +176,9 @@ function Footer() {
         <p className="text-sm">Create design agency</p>
       </div>
       <div className="flex flex-row gap-4">
-        <FaTwitter size={25} />
+        {/* <FaTwitter size={25} />
         <FaInstagram size={25} />
-        <FaMailBulk size={25} />
+        <FaMailBulk size={25} /> */}
       </div>
     </footer>
   );
