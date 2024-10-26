@@ -136,7 +136,7 @@ function Main() {
         </div>
       </div>
 
-      <div className="text-white py-16 mx-8 md:mx-64 text-left grid grid-cols-2  md:grid-cols-3 gap-4">
+      <div className="text-white py-16 mx-8 md:mx-64 text-left grid grid-cols-1  md:grid-cols-3 gap-4">
         <div className="aspect-square bg-[#ADF802] text-black flex flex-col justify-center rounded-[2.5rem]">
           <h1 className="text-2xl font-bold p-4 md:p-8"
             style={{
