@@ -30,7 +30,7 @@ function Main() {
     <main className="flex flex-col justify-center text-center">
       <div className="">
 
-        <div className=" h-screen px-16 md:px-32 pt-32 md:pt-16"
+        <div className=" min-h-screen px-16 md:px-32 pt-32 md:pt-16"
           style={{
             backgroundImage: 'radial-gradient(125% 125% at 50% 0%, #08080A 50%, #ADF802)',
           }}>
