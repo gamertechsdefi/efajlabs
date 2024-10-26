@@ -28,7 +28,7 @@ function Header() {
 function Main() {
   return (
     <main className="flex flex-col justify-center text-center">
-      <div className=" min-h-screen px-16 md:px-32 pt-32 md:pt-16"
+      <div className=" min-h-screen px-16 md:px-32 pt-8 md:pt-16"
         style={{
           backgroundImage: 'radial-gradient(125% 125% at 50% 0%, #08080A 50%, #ADF802)',
         }}>
@@ -41,54 +41,57 @@ function Main() {
         <p className="text-sm pt-8 md:px-16">We blend creativity with cutting-edge technology to craft visually stunning and results-driven solutions. From web design to video editing, we help businesses transform into digital powerhouses</p>
         <button className="bg-neutral-900 border-[1px] border-[#ADF802] px-8 py-2 mt-4 rounded-3xl">Let create</button>
       </div>
-
-      <div className="mt-16 px-8"
-        style={{
-          backgroundImage: 'url(/images/bg-effect.png)',
-          backgroundPosition: 'bottom center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}>
-        <h1 className="text-4xl pb-4"
-          style={{
-            fontFamily: 'Bricolage Grotesque, sans-serif',
-          }}>Our goal is to see our client in
-          <span className="font-bold text-[#ADF802]"
+      <div style={{
+            backgroundImage: 'url(/images/bg-effect2.jpg)',
+            backgroundPosition: 'bottom',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }}>
+        <div className="py-16 px-8"
+          >
+          <h1 className="text-4xl pb-4"
             style={{
               fontFamily: 'Bricolage Grotesque, sans-serif',
-              fontWeight: '800',
-            }}> top 100</span></h1>
-        <p className="font-bold">WE HAVE THE SKILL SETS TO MAKE YOU ACHIEVE 10X RESULTS</p>
+            }}>Our goal is to see our client in
+            <span className="font-bold text-[#ADF802]"
+              style={{
+                fontFamily: 'Bricolage Grotesque, sans-serif',
+                fontWeight: '800',
+              }}> top 100</span></h1>
+          <p className="font-bold">WE HAVE THE SKILL SETS TO MAKE YOU ACHIEVE 10X RESULTS</p>
 
-        <div className="py-8 mx-8 md:mx-32 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
-            <h1 className="font-bold flex flex-col pb-4">
-              <span className="text-3xl">10+</span>
-              <span className="">EMPLOYEES</span>
-            </h1>
+          <div className="py-8 mx-8 md:mx-32 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">10+</span>
+                <span className="">EMPLOYEES</span>
+              </h1>
 
-            <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
-          </div>
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
 
-          <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
-            <h1 className="font-bold flex flex-col pb-4">
-              <span className="text-3xl">20+</span>
-              <span className="">BRANDS DEVELOPED</span>
-            </h1>
+            <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">20+</span>
+                <span className="">BRANDS DEVELOPED</span>
+              </h1>
 
-            <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
-          </div>
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
 
-          <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
-            <h1 className="font-bold flex flex-col pb-4">
-              <span className="text-3xl">40+</span>
-              <span className="">CONNECTIONS MADE</span>
-            </h1>
-            <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            <div className="aspect-square bg-neutral-900 bg-opacity-50 border-2 border-[#ADF802] rounded-xl p-8">
+              <h1 className="font-bold flex flex-col pb-4">
+                <span className="text-3xl">40+</span>
+                <span className="">CONNECTIONS MADE</span>
+              </h1>
+              <p className="text-sm">Loprem ipsum etc ectera and so on it goes and did not want to end</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="bg-[#ADF802] text-black text-left mt-16 px-8 md:px-32 py-16 grid md:grid-cols-2 gap-16">
+
+
+      <div className="bg-[#ADF802] text-black text-left px-8 md:px-32 py-16 grid md:grid-cols-2 gap-16">
         <div className="flex flex-col justify-between gap-8">
           <div>
             <h1 className="font-bold text-5xl pb-4"
