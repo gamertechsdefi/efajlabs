@@ -167,13 +167,19 @@ function Main() {
         </div>
       </div>
 
-      <div className="text-white py-16 mx-8 md:mx-64 text-left grid grid-cols-1  md:grid-cols-3 gap-4" id="services">
-        <div className="aspect-square bg-[#ADF802] text-black flex flex-col justify-center rounded-[2.5rem]">
-          <h1 className="text-2xl font-bold p-4 md:p-8"
+      <div className="text-white py-16 mx-8 md:mx-32 text-left grid grid-cols-1  md:grid-cols-3 gap-4" id="services">
+        <div className="aspect-square bg-[#ADF802] text-black flex flex-row items-center justify-center rounded-[2.5rem]">
+          <h1 className="text-5xl font-bold p-4 md:p-8"
             style={{
               fontFamily: 'Bricolage Grotesque, sans-serif',
               fontWeight: '800',
-            }}>Our Services</h1>
+            }}>Our <br /> Services</h1>
+          <svg className="mb-32 md:mb-16 md:mr-4" width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 7L7 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M7 8V17H16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+
+
         </div>
         <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
           <h1 className="text-2xl font-bold pb-4">Graphics Design</h1>
