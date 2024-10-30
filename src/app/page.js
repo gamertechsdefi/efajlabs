@@ -136,7 +136,7 @@ function Main() {
               description="Designer"
             />
             <ImageGrid
-              src="/images/gamer.png"
+              src="/images/GAMER.png"
               title="Gamer"
               description="Developer"
             />
