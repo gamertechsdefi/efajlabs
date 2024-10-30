@@ -1,6 +1,12 @@
+'use client'
+
 import Image from "next/image";
+import { useState, useEffect } from "react";
+
+import ImageGrid from "@/components/ImageGrid";
 
 export default function Home() {
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -26,6 +32,24 @@ function Header() {
 }
 
 function Main() {
+
+  const [isInfoVisible, setIsInfoVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+  const handleInteraction = () => {
+    if (isMobile) {
+      setIsInfoVisible(!isInfoVisible);
+    }
+  };
+
   return (
     <main className="flex flex-col justify-center text-center">
       <div className=" min-h-screen px-16 md:px-32 pt-8 md:pt-16"
@@ -42,13 +66,13 @@ function Main() {
         <button className="bg-neutral-900 border-[1px] border-[#ADF802] px-8 py-2 mt-4 rounded-3xl">Let create</button>
       </div>
       <div style={{
-            backgroundImage: 'url(/images/bg-effect2.jpg)',
-            backgroundPosition: 'bottom',
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-          }}>
+        backgroundImage: 'url(/images/bg-effect2.jpg)',
+        backgroundPosition: 'bottom',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }}>
         <div className="py-16 px-8"
-          >
+        >
           <h1 className="text-4xl pb-4"
             style={{
               fontFamily: 'Bricolage Grotesque, sans-serif',
@@ -105,14 +129,19 @@ function Main() {
               expanding your digital presence, we have the tools to help you succeed.</p>
           </div>
 
-          <div className="flex flex-row gap-4">
-            <div className="bg-[#08090A] w-20 h-20 rounded-lg relative">
-              <Image src="/images/efajie.png" layout="fill" objectFit="contain" className="absolute rounded-lg" alt="efajie" />
-            </div>
-            <div className="bg-[#08090A] w-20 h-20 rounded-lg relative">
-              <Image src="/images/GAMER.png" layout="fill" objectFit="contain" className="absolute rounded-lg" alt="efajie" />
-            </div>
+          <div className="flex flex-row gap-8">
+            <ImageGrid
+              src="/images/efajie.png"
+              title="Efajie"
+              description="Designer"
+            />
+            <ImageGrid
+              src="/images/gamer.png"
+              title="Gamer"
+              description="Developer"
+            />
           </div>
+
         </div>
 
         <div className="">
