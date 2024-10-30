@@ -4,11 +4,12 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import ImageGrid from "@/components/ImageGrid";
+import Link from "next/link";
 
 export default function Home() {
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       <Header />
       <Main />
       <Footer />
@@ -18,14 +19,13 @@ export default function Home() {
 
 function Header() {
   return (
-    <div className="px-8 md:px-16 py-8 flex flex-row justify-between">
+    <div className="px-8 md:px-16 py-8 flex flex-row justify-between items-center">
       <div>
-        <h1 className="font-bold text-2xl">Logo</h1>
-
+        <Image src="/images/logo-01.png" width={60} height={60} alt="logo" />
       </div>
       <div className="flex gap-8">
-        <p>About </p>
-        <p>Services </p>
+        <Link href="#about">About </Link>
+        <Link href="#services">Services </Link>
       </div>
     </div>
   );
@@ -167,7 +167,7 @@ function Main() {
         </div>
       </div>
 
-      <div className="text-white py-16 mx-8 md:mx-64 text-left grid grid-cols-1  md:grid-cols-3 gap-4">
+      <div className="text-white py-16 mx-8 md:mx-64 text-left grid grid-cols-1  md:grid-cols-3 gap-4" id="services">
         <div className="aspect-square bg-[#ADF802] text-black flex flex-col justify-center rounded-[2.5rem]">
           <h1 className="text-2xl font-bold p-4 md:p-8"
             style={{
@@ -175,20 +175,25 @@ function Main() {
               fontWeight: '800',
             }}>Our Services</h1>
         </div>
-        <div className="aspect-square bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-center rounded-xl">
-          <h1 className="text-xl font-bold p-4 md:p-8">Graphics Design</h1>
+        <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
+          <h1 className="text-2xl font-bold pb-4">Graphics Design</h1>
+          <p className="text-sm text-neutral-300">Transforming concepts into visually stunning graphics that captivate, communicate, and elevate your brand, ensuring each design speaks directly to your audience.</p>
         </div>
-        <div className="aspect-square bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-center rounded-xl">
-          <h1 className="text-xl font-bold p-4 md:p-88">Web Design & Development</h1>
+        <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
+          <h1 className="text-2xl font-bold pb-4">Web Design & Development</h1>
+          <p className="text-sm text-neutral-300">Crafting high-performance websites that merge creativity with functionality, delivering engaging, user-friendly experiences across all devices</p>
         </div>
-        <div className="aspect-square bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-center rounded-xl">
-          <h1 className="text-xl font-bold p-4 md:p-8">Product Design</h1>
+        <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
+          <h1 className="text-2xl font-bold pb-4">Product Design</h1>
+          <p className="text-sm text-neutral-300">Innovating user-centric products that combine aesthetic appeal with practical functionality, designed to resonate in today competitive market</p>
         </div>
-        <div className="aspect-square bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-center rounded-xl">
-          <h1 className="text-xl font-bold p-4 md:p-8">Illustrations</h1>
+        <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
+          <h1 className="text-2xl font-bold pb-4">Illustrations</h1>
+          <p className="text-sm text-neutral-300">Creating unique, expressive illustrations that bring your brand story to life, adding depth, personality, and a memorable touch to every project</p>
         </div>
-        <div className="aspect-square bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-center rounded-xl">
-          <h1 className="text-xl font-bold p-4 md:p-8">Video Editing</h1>
+        <div className="aspect-square p-4 md:p-8 pb-8 bg-[#08080A] border-2 border-neutral-700 flex flex-col justify-end rounded-xl">
+          <h1 className="text-2xl font-bold pb-4">Video Editing</h1>
+          <p className="text-sm text-neutral-300">Turning raw footage into captivating visual stories, ensuring every scene, cut, and effect aligns perfectly with your brand vision and message</p>
         </div>
       </div>
 
@@ -200,9 +205,9 @@ function Footer() {
 
   return (
     <footer className="flex flex-col md:flex-row justify-between md:items-center px-8 md:px-16 pt-32 pb-8 gap-4">
-      <div className="flex-col">
-        <h1 className="text-2xl">Logo</h1>
-        <p className="text-sm">Create design agency</p>
+      <div className="flex-col pb-4">
+        <Image className="pb-2" src="/images/logo-02.png" alt="logo-txt" width={200} height={100} />
+        <p className="text-sm">Creative Services Agency</p>
       </div>
       <div className="flex flex-row gap-8">
         <svg className="w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" /></svg>

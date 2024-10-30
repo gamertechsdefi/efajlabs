@@ -34,9 +34,9 @@ const ImageGrid = ({ src, title, description, index }) => {
         />
         
         {isInfoVisible && (
-          <div className="absolute -top-16 left-0 w-full bg-white p-4 rounded-lg shadow-lg md:transition-opacity md:duration-200">
-            <h3 className="font-medium text-gray-900">{title}</h3>
-            <p className="text-sm text-gray-600">{description}</p>
+          <div className="absolute -top-16 left-0 w-full bg-[#08090A] text-neutral-300 p-4 rounded-lg shadow-lg md:transition-opacity md:duration-200">
+            <h3 className="font-medium">{title}</h3>
+            <p className="text-sm">{description}</p>
           </div>
         )}
       </div>
